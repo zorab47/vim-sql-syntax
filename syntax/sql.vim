@@ -75,6 +75,13 @@ syn keyword sqlKeyword      table_info temp_store temp_store_directory
 syn keyword sqlKeyword      user_version vdbe_listing vdbe_trace
 syn keyword sqlKeyword      wal_autocheckpoint wal_checkpoint writable_schema
 
+" PostgreSQL Pragmas
+syn keyword sqlKeyword      materialized concurrently window over
+syn keyword sqlStatement    refresh
+syn match   sqlOperator     "::"
+syn match   sqlOperator     "->\|->>\|#>\|#>>"
+syn match   sqlOperator     "@>\|<@\|?\|?|\|?&\|#-"
+
 " Operators
 syn keyword sqlOperator     all and any between case distinct elif else end
 syn keyword sqlOperator     exit exists if in intersect is like match matches
